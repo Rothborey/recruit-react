@@ -3,4 +3,28 @@
 .App {
   text-align: center;
   color: $text-color;
+
+  .page-content {
+    padding-top: 20px;
+    min-height: 100vh;
+    background-color: $background-color;
+  }
+
+  @mixin input-button-style {
+    height: 35px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  button {
+    @include input-button-style;
+    background-color: $accent-color;
+    color: $inverse-color;
+  }
+
+  input {
+    @include input-button-style;
+    border-style: groove;
+  }
 }

@@ -1,0 +1,27 @@
+.credit-card-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cvc {
+    width: 50px;
+  }
+
+  .card-number {
+    min-width: 250px;
+  }
+
+  .submit-button {
+    width: 100px;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    flex-wrap: wrap;
+    justify-content: flex-end !important;
+
+    .card-number,
+    .submit-button {
+      flex-basis: 100%;
+    }
+  }
+}
