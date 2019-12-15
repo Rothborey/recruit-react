@@ -1,0 +1,52 @@
+@import "../../_variables";
+
+$header-height: 60px;
+
+.header-container {
+  height: $header-height;
+  background-color: $accent-color;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu-button {
+    background-color: transparent;
+    border: 0;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .header-title {
+    flex-grow: 2;
+    color: $inverse-color;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .menu-icon,
+  .back-icon {
+    height: 30px;
+    color: $inverse-color;
+    fill: $inverse-color;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: $header-height;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: $inverse-color;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
